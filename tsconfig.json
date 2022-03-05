@@ -32,6 +32,9 @@
       "@services/*": [
         "./src/services/*"
       ],
+      "@styles/*": [
+        "./src/styles/*"
+      ],
       "@typeDefs/*": [
         "./src/types/*"
       ],
@@ -41,7 +44,8 @@
       "@assets/*": [
         "./src/assets/*"
       ]
-    }
+    },
+    "incremental": true
   },
   "exclude": [
     "node_modules"
