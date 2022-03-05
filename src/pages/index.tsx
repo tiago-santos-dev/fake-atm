@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 
+import logo from '@assets/logo.svg'
 const Home: NextPage = () => {
 
   return (
@@ -9,9 +10,7 @@ const Home: NextPage = () => {
         <title>Fake ATM</title>
       </Head>
       <main>
-        <h1>
-          Welcome to Fake-ATM
-        </h1>
+        <img src={logo} alt="ts corretora" />
       </main>
     </div>
   )
