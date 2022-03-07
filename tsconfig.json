@@ -20,6 +20,9 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
+      "@/*": [
+        "./src/*"
+      ],
       "@components/*": [
         "./src/components/*"
       ],
@@ -35,9 +38,6 @@
       "@styles/*": [
         "./src/styles/*"
       ],
-      "@typeDefs/*": [
-        "./src/types/*"
-      ],
       "@utils/*": [
         "./src/utils/*"
       ],
@@ -51,6 +51,7 @@
     "node_modules"
   ],
   "include": [
+    "src",
     "**/*.ts",
     "**/*.tsx",
     "next-env.d.ts",

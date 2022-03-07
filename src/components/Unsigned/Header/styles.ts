@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100vw;
@@ -8,10 +8,8 @@ export const Container = styled.div`
   grid-template-columns: repeat(3, 1fr);
 `;
 
-
 export const LogoContainer = styled.div`
   grid-column: 2;
-
 `;
 
 export const PhoneNumberContainer = styled.p`

@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
   * {
@@ -9,10 +9,16 @@ export default createGlobalStyle`
 
   body, input, textarea, select, button {
 
-    background: ${props => props.theme.colors.background};
-    color:  ${props => props.theme.colors.text};
+    background: ${props => props.theme.colors.white};
+    color:  ${props => props.theme.colors.gray};
 
     font: 400 1rem "Roboto", sans-serif;
+  }
+
+  textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
   }
 
   button {
