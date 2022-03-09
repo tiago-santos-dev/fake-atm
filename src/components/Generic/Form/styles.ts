@@ -3,7 +3,6 @@ import { Form as FormikForm } from 'formik';
 
 export const Container = styled.div`
   width: 20vw;
-  height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,6 +23,7 @@ export const Form = styled(FormikForm)`
 
 export const InputContainer = styled.div`
   width: 100%;
+  margin-bottom: 1rem;
   background-color: red;
   display: flex;
   flex-direction: column;

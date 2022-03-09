@@ -15,8 +15,8 @@ const SignInForm: React.FC = () => {
   });
 
   const fields: IFieldProps[] = [
-    { name: 'email', type: 'email', icon: FiMail },
-    { name: 'password', type: 'password', icon: FiLock }
+    { name: 'email', label: 'email', type: 'email', icon: FiMail },
+    { name: 'password', label: 'senha', type: 'password', icon: FiLock }
   ];
 
   return (

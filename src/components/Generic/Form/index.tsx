@@ -29,7 +29,7 @@ const GenericForm: React.FC<IGenericFormProps> = ({
                 name={field.name}
                 icon={field.icon}
                 type={field.type}
-                placeholder={field.name}
+                placeholder={field.label}
               />
             ))}
           </InputContainer>

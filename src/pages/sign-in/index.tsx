@@ -2,13 +2,13 @@ import React from 'react';
 import Head from 'next/head';
 import { Footer } from '@components/Unsigned/Footer';
 import { Header } from '@components/Unsigned/Header';
-import SignInForm from '@components/SignIn/Form';
 import {
   Container,
   SignUpButton,
   SignUpContainer
 } from '@styles/pages/sign-in';
 import { NextPage } from 'next';
+import SignInForm from '@/components/Form/SignIn';
 
 const SignIn: NextPage = () => (
   <Container>
