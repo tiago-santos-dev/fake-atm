@@ -6,6 +6,7 @@ import { Container } from '@styles/pages/sign-in';
 import { NextPage } from 'next';
 import SignUpForm from '@/components/Form/Signup';
 import { SignInButton } from '@/styles/pages/sign-up';
+import Link from 'next/link';
 
 const SignUp: NextPage = () => (
   <Container>
@@ -14,7 +15,9 @@ const SignUp: NextPage = () => (
     </Head>
     <Header />
     <SignUpForm />
-    <SignInButton text="Já tenho cadastro" />
+    <Link href="/sign-in">
+      <SignInButton text="Já tenho cadastro" />
+    </Link>
     <Footer />
   </Container>
 );
