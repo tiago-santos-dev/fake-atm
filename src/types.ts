@@ -34,3 +34,6 @@ export interface ISignUpFormData {
   email: string;
   password: string;
 }
+export interface INewOperationFormData {
+  amount: number;
+}

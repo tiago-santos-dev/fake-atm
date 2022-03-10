@@ -33,6 +33,7 @@ export const InputContainer = styled.div`
 `;
 
 export const Label = styled.text`
+  text-transform: capitalize;
   color: ${props => props.theme.colors.primary};
   font-weight: 700;
 `;
