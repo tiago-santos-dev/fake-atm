@@ -1,9 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
 
-  color: ${props => props.theme.colors.primary};
   span {
     font-weight: 700;
   }
