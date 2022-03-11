@@ -4,6 +4,7 @@ import { Footer } from '@components/Unsigned/Footer';
 import { Header } from '@components/Unsigned/Header';
 import {
   Container,
+  Content,
   SignUpButton,
   SignUpContainer
 } from '@styles/pages/sign-in';
@@ -17,13 +18,15 @@ const SignIn: NextPage = () => (
       <title>Fake ATM | Sign-in</title>
     </Head>
     <Header />
-    <SignInForm />
-    <SignUpContainer>
-      <p>Não é cadastrado?</p>
-      <Link href="/sign-up">
-        <SignUpButton text="Cadastre-se agora" />
-      </Link>
-    </SignUpContainer>
+    <Content>
+      <SignInForm />
+      <SignUpContainer>
+        <p>Não é cadastrado?</p>
+        <Link href="/sign-up">
+          <SignUpButton text="Cadastre-se agora" />
+        </Link>
+      </SignUpContainer>
+    </Content>
     <Footer />
   </Container>
 );

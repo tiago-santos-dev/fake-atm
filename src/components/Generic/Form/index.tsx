@@ -14,7 +14,9 @@ const GenericForm: React.FC<IGenericFormProps> = ({
   fields
 }) => (
   <Container>
-    <Label>{label}</Label>
+    {
+      label && <Label>{label}</Label>
+    }
     <Formik
       initialValues={initialValues}
       validationSchema={validationSchema}

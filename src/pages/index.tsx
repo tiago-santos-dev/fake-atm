@@ -2,9 +2,10 @@ import { Footer } from '@/components/Footer';
 import Header from '@/components/Header';
 import Button from '@/components/UI/Button';
 import { Container, Content } from '@/styles/pages/home';
-import type { NextPage } from 'next';
+import type { GetServerSideProps, NextPage } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
+import { parseCookies } from 'nookies';
 
 const Home: NextPage = () => (
   <Container>
@@ -22,3 +23,21 @@ const Home: NextPage = () => (
 );
 
 export default Home;
+
+export const getServerSideProps: GetServerSideProps = async (ctx) => {
+  const { ['fake-atm.token']: token } = parseCookies(ctx);
+
+  if (!token) {
+    return {
+      redirect: {
+        destination: '/sign-in',
+        permanent: false
+      }
+    }
+  }
+
+  return {
+    props: {}
+  }
+
+}

@@ -3,6 +3,7 @@ import { Form as FormikForm } from 'formik';
 
 export const Container = styled.div`
   width: 20vw;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +15,7 @@ export const Container = styled.div`
 
 export const Form = styled(FormikForm)`
   width: 100%;
-  height: 100%;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -23,7 +24,7 @@ export const Form = styled(FormikForm)`
 
 export const InputContainer = styled.div`
   width: 100%;
-  margin-bottom: 1rem;
+  margin: 0.5rem 0 1rem 0;
   background-color: red;
   display: flex;
   flex-direction: column;
@@ -35,5 +36,5 @@ export const InputContainer = styled.div`
 export const Label = styled.text`
   text-transform: capitalize;
   color: ${props => props.theme.colors.primary};
-  font-weight: 700;
+  font-weight: 500;
 `;

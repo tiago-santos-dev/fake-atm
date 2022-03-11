@@ -8,6 +8,14 @@ export const Container = styled.div`
   justify-items: center;
 `;
 
+export const Content = styled.div`
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+`;
+
 export const SignInButton = styled(Button)`
   width: 15rem;
   margin-top: 2rem;

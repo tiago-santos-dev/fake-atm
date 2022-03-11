@@ -73,9 +73,8 @@ const SignUpForm: React.FC = () => {
     <GenericForm
       fields={fields}
       initialValues={initialValues}
-      label="Cadastre-se"
       validationSchema={SignUpSchema}
-      onSubmit={() => {}}
+      onSubmit={() => { }}
       submitButtonText="Cadastrar"
     />
   );

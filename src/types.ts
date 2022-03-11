@@ -1,3 +1,4 @@
+import React from 'react';
 import { FormikValues } from 'formik';
 import { IconBaseProps } from 'react-icons/lib';
 
@@ -11,9 +12,9 @@ export interface IFieldProps {
 export interface IGenericFormProps {
   initialValues: FormikValues;
   validationSchema: object;
-  onSubmit: () => void;
+  onSubmit: (values: ISignInFormData) => Promise<void>;
   submitButtonText: string;
-  label: string;
+  label?: string;
   fields: IFieldProps[];
 }
 
